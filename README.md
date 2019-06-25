@@ -2,6 +2,7 @@
 
 *Does anyone actually remember 2005?*
 **(e.g., when uiuc.edu was not redirected to illinois.edu)**
+
 The apparent answer to this with respect to 
 students at UIUC is apparently a decided ``NULL;`` response. I left the university 
 with official coverage on my CV of "graduate engineering school degree" a 
