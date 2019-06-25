@@ -75,16 +75,17 @@ before dropping two of them that year:
 
 ## Credit where credit is due
 
-If you want to thank [Jas0n](local-documents/ThankingJasonForHisHacking.md) 
+If you want to sincerely 
+thank [Jas0n](https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/tree/master/local-documents/local-documents/ThankingJasonForHisHacking.md) 
 (and profusely) for his contribution and 
 time to enhance the offsensive prosecutions of CS undergrads for their 
 percieved sins, his email addresses are linked 
 [here](mailto:Jason.Zych@gmail.com) and [here](mailto:jzych3@gmail.com) 
 (I couldn't find his official CV to link to online these days -- therefore, 
 we must assume it doesn't exist). I sincerely hope that all of the 
-"youngsters" who can now benefit from the [code library](code-library-sources/) 
-(especially this STL gem which [sadly Cinda Heeren missed](code-library-sources/03-c++generic/_c++stdvector/vector225.cpp) -- 
-[header file](code-library-sources/03-c++generic/_c++stdvector/vector225.h)) 
+"youngsters" who can now benefit from the [code library](https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/tree/master/code-library-sources/) 
+(especially this STL gem which [sadly Cinda Heeren missed](https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/tree/master/code-library-sources/03-c++generic/_c++stdvector/vector225.cpp) -- 
+[header file](https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/tree/master/code-library-sources/03-c++generic/_c++stdvector/vector225.h)) 
 will choose to thank me by (en)forcing the painfull process of having to change 
 longstanding GMail addresses on Jason Zych by DOS-ing his 
 old school Un1x spam filter: 

@@ -1,10 +1,10 @@
 # A few highlights about the man, the myth, the legend himself
 
-<img src="local-images/rbnotes-the-point3.png" />
+<img src="https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/tree/master/local-images/rbnotes-the-point3.png" />
 
 A few links which have survived 15 years or so of Google iterations 
 suggest the following answers to the question: 
-*Who was Jason Zych?* ([indeed](https://www.facebook.com/UIUC.CS225/posts/i-had-jason-zych-during-his-last-semester-teaching-here-bring-back-the-mountain-/325944075682/) and [ditto](https://www.reddit.com/r/UIUC/comments/6kapwr/who_is_jason_zych/)):
+*Who was Jason Zych?* ([indeed](https://www.reddit.com/r/UIUC/comments/6kapwr/who_is_jason_zych/) and [ditto](https://www.facebook.com/UIUC.CS225/posts/i-had-jason-zych-during-his-last-semester-teaching-here-bring-back-the-mountain-/325944075682/)):
 
 **theillini19 from Reddit:**
 *He's a "myth" as old as the UIUC CS program itself. The situation is kind of like Homer's The Odyssey- no one knows if 
@@ -17,11 +17,16 @@ the [lost faculty image of him](https://cs.illinois.edu/directory/profile/zych) 
 used to be linked on the CS department's [webpage](http://cs.uiuc.edu). A few other 
 images worth literally 1000's of words of note taking:
 
-<img src="local-images/kdtree-notes-page1.png" />
+<img src="https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/tree/master/local-images/kdtree-notes-page1.png" />
 
 **(On the role of Math in CS: )**
-<img src="local-images/lecture-notes2.png" />
+<img src="https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/tree/master/local-images/lecture-notes2.png" />
 
 He was also the only instructor I was in class with in my tenure at UIUC who never 
 introduced himself to the students in his class on day one, and still insisted on 
-being called on by the ubiquitous first-name-only basis. 
+being called on by the ubiquitous first-name-only basis. I personally miss the days in that 
+class when the lecturer on board would scream "*Lecture has started! [STFU, boys]*" in class 
+with the microphone on to indicate that talking (or whispering) in class was not to be tolerated. 
+It was in fact distinctively clearly voiced on the course website and newsgroups that complete handwritten 
+lecture notes each MWF-day could be downloaded off of the course website to make up for this 
+anticipated rudeness when it came up. 
