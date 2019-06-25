@@ -1,0 +1,27 @@
+# A few highlights about the man, the myth, the legend himself
+
+<img src="local-images/rbnotes-the-point3.png" />
+
+A few links which have survived 15 years or so of Google iterations 
+suggest the following answers to the question: 
+*Who was Jason Zych?* ([indeed](https://www.facebook.com/UIUC.CS225/posts/i-had-jason-zych-during-his-last-semester-teaching-here-bring-back-the-mountain-/325944075682/) and [ditto](https://www.reddit.com/r/UIUC/comments/6kapwr/who_is_jason_zych/)):
+
+**theillini19 from Reddit:**
+*He's a "myth" as old as the UIUC CS program itself. The situation is kind of like Homer's The Odyssey- no one knows if 
+Homer was an actual person, or if the epic was created by a group of people over many years. 
+Same thing with the CS notes by Jason Zych.*
+
+Some people who are good with data mining can still find old images of him on 
+Google images, including one of him as a lucky X-Windows loving teenager and 
+the [lost faculty image of him](https://cs.illinois.edu/directory/profile/zych) which 
+used to be linked on the CS department's [webpage](http://cs.uiuc.edu). A few other 
+images worth literally 1000's of words of note taking:
+
+<img src="local-images/kdtree-notes-page1.png" />
+
+**(On the role of Math in CS: )**
+<img src="local-images/lecture-notes2.png" />
+
+He was also the only instructor I was in class with in my tenure at UIUC who never 
+introduced himself to the students in his class on day one, and still insisted on 
+being called on by the ubiquitous first-name-only basis. 
