@@ -1,6 +1,6 @@
 # A revealing look at attitudes towards the DMCA from 2005
 
-In addition to the source in the [code library]() for 
+In addition to the source in the [code library](https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2017/tree/master/code-library-sources) for 
 CS225 labs at UIUC around 2005, I pulled some dated files 
 off my backup media which are suggestive of approval on the 
 part of the instructors for the course around that time. 
@@ -93,8 +93,9 @@ old school Un1x spam filter:
 HELL_FREEZES_OVER = ((2**32 - 1))
 int_i="0"
 while[ $int_i -lt $HELL_FREEZES_OVER ]; do
+     emailFrom="`LC_ALL=C tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' </dev/urandom | head -c 13 ; echo`@SuckIt.net";
      echo -e "So long, and thanks for all the code, \t\t\t\t\t\t\tJason!" | \
-              mail -s "See message line." jason.zych@gmail.com;
+              mail -s "See message line." jason.zych@gmail.com -- -r "$emailFrom";
      int_i=$[$int_i + 1];
 fi
 ```
