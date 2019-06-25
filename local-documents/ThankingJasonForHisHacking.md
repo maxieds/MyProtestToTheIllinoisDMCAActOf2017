@@ -18,9 +18,10 @@ the [lost faculty image of him](https://cs.illinois.edu/directory/profile/zych) 
 used to be linked on the CS department's [webpage](http://cs.uiuc.edu). A few other 
 images worth literally 1000's of words of note taking:
 
-<img src="https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/blob/master/local-images/rbnotes-the-point3.png" />
+<img src="https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2017/blob/master/local-images/kdtree-notes-page1.png" />
 
-**(On the role of Math in CS: )**
+<br/>
+
 <img src="https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/blob/master/local-images/lecture-notes2.png" />
 
 He was also the only instructor I was in class with in my tenure at UIUC who never 
