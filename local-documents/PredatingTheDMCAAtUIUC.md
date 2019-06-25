@@ -76,7 +76,7 @@ before dropping two of them that year:
 ## Credit where credit is due
 
 If you want to sincerely 
-thank [Jas0n](https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/blob/master/local-documents/local-documents/ThankingJasonForHisHacking.md) 
+thank [Jas0n](https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/blob/master/local-documents//ThankingJasonForHisHacking.md) 
 (and profusely) for his contribution and 
 time to enhance the offsensive prosecutions of CS undergrads for their 
 percieved sins, his email addresses are linked 

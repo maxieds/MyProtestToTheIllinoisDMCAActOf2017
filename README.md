@@ -15,7 +15,7 @@ my readings online were supported at the time by [Cinda Heeren](https://www.cs.u
 I will instead issue my response to the "takedown" blunder 
 by reposting some code that I encountered in my freshmen CS courses the first 
 time I was enrolled in them years ago. It 
-[appears (to me)](https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/blob/master/local-documents/local-documents/PredatingTheDMCAAtUIUC.md) that 
+[appears (to me)](https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/blob/master/local-documents//PredatingTheDMCAAtUIUC.md) that 
 their support was not original and was actually plainly pre-dated by hidden messages of support for this policy 
 CS department authorities many years back. *So let's insist on 
 being more positive and STEM-supportive in our post-undergrad 
@@ -53,7 +53,7 @@ thorough protest of the takedown act from years ago that hits on the
 violation to the DMCA. I also like the idea of correcting any *logic errors* 
 found in the source just to inspire others to take up the spirit of offending the seemingly 
 delicate, obsessive, and vocally temperamental sensibilities of the former (forgotten about these days) 
-[lecturer in CS](https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/blob/master/local-documents/local-documents/ThankingJasonForHisHacking.md) 
+[lecturer in CS](https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/blob/master/local-documents//ThankingJasonForHisHacking.md) 
 whose name appears on the most (by plain old tally count) of the 
 header files re-posted in this repository. 
 
