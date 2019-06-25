@@ -56,4 +56,4 @@ delicate, obsessive, and vocally temperamental sensibilities of the former (forg
 whose name appears on the most (by plain old tally count) of the 
 header files re-posted in this repository. 
 
-With all of this in mind, let's get started and enjoy the code. 
+With all of this in mind, let's get started and enjoy the code! 
