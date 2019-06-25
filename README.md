@@ -7,6 +7,7 @@ students at UIUC is apparently a decided ``NULL;`` response. I left the universi
 with official coverage on my CV of "graduate engineering school degree" a 
 couple of years before the horrid and off-putting invokation of 
 [Takedown (Act) termed](https://publish.illinois.edu/illinoisblj/2017/03/12/digital-millennium-copyright-act-notice-and-takedown-on-fair-use/) 
+(see [this history](https://github.com/github/dmca)) 
 federal copyright law on CS students at my otherwise fine Alma Mater. 
 Instead of dwell on the former poor administration decision making that by 
 my readings online were supported at the time by [Cinda Heeren](https://www.cs.ubc.ca/people/cinda-heeren) and 
