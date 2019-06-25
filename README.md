@@ -58,4 +58,4 @@ delicate, obsessive, and vocally temperamental sensibilities of the former (forg
 whose name appears on the most (by plain old tally count) of the 
 header files re-posted in this repository. 
 
-With all of this in mind, let's get started and enjoy the code! 
+With all of this in mind, let's get started and enjoy the code! And, if there exist any questions there about this code, please either [post a new issue thread](https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2017/issues) or fork to generate a [pull request](https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2017/pulls) to propose a redaction of offensive material. All issues and pull requests will be reviewed and thoughtfully considered within a short window of time after posting (give me at least one week). The editor does, however, reserve the right to deny and/or reject any questionably motivated modifications to the presentation in this repository after appropriate consideration. 
