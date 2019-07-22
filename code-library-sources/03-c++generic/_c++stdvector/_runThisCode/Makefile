@@ -13,14 +13,14 @@ NAME_OF_EXECUTABLE_FILE = vectorTest
 # Next, we want to define which C++ compiler we are using and what options
 # we are using for that compiler. 
 
-COMPILER = CC
+COMPILER = g++
 COMPILER_OPTS = -c -g
 
 # Next, we want to define which program we are using to link all our
 # files together (often, we are using the compiler we used to compile them
 # in the first place) and what options we are using for that linker.
 
-LINKER = CC
+LINKER = g++
 LINKER_OPTS = -o $(NAME_OF_EXECUTABLE_FILE)
 
 # Finally, we want a list of all the .o files (object files) that 
