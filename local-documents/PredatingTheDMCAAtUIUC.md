@@ -86,8 +86,7 @@ we must assume it doesn't exist). I sincerely hope that all of the
 "youngsters" who can now benefit from the [code library](https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/blob/master/code-library-sources/) 
 (especially this STL gem which [sadly Cinda Heeren missed](https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/blob/master/code-library-sources/03-c++generic/_c++stdvector/vector225.cpp) -- 
 [header file](https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/blob/master/code-library-sources/03-c++generic/_c++stdvector/vector225.h)) 
-will choose to thank me by (en)forcing the painful process of having to change 
-longstanding GMail addresses on Jason Zych by DOS-ing his 
+will choose to thank the old man by DOS-ing his 
 old school Un1x spam filter: 
 ```
 HELL_FREEZES_OVER = ((2**32 - 1))
