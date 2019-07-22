@@ -1,0 +1,64 @@
+// pacman and the ghostbots
+
+ENV_FILE = gr_demos/pacman/pacman_maze1.env
+
+BEGIN_ROBOT
+
+     TYPE = pacbot 
+     BOT_NAME = Pacman
+     COLOR = yellow
+     RADIUS = 7 
+     ASM_FILE = gr_demos/pacman/pacman.s
+     START_X = 14
+     START_Y = 14
+
+END_ROBOT
+
+BEGIN_ROBOT
+
+     TYPE = ghostbot
+     BOT_NAME = Blinky
+     COLOR = red
+     RADIUS = 7
+     ASM_FILE = gr_demos/pacman/ghostbot_maze1.s
+     START_X = 154
+     #START_X = 14
+     START_Y = 14
+
+END_ROBOT
+
+//BEGIN_ROBOT
+//
+//     TYPE = ghostbot
+//     BOT_NAME = Pinky
+//     COLOR = lightpink
+//     RADIUS = 7
+//     ASM_FILE = gr_demos/pacman/ghostbot_maze1.s
+//     START_X = 238
+//     START_Y = 14
+//
+//END_ROBOT
+
+//BEGIN_ROBOT
+//
+//     TYPE = ghostbot
+//     BOT_NAME = Inky
+//     COLOR = lightblue
+//     RADIUS = 7
+//     ASM_FILE = gr_demos/pacman/ghostbot_maze1.s
+//     START_X = 238
+//     START_Y = 140 
+//
+//END_ROBOT
+
+//BEGIN_ROBOT
+//
+//     TYPE = ghostbot
+//     BOT_NAME = Clyde
+//     COLOR = orange
+//     RADIUS = 7
+//     ASM_FILE = gr_demos/pacman/ghostbot_maze1.s
+//     START_X = 54
+//     START_Y = 168
+//
+//END_ROBOT

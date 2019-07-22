@@ -1,0 +1,16 @@
+// pacman and the ghostbots
+
+ENV_FILE = gr_demos/pacman/pacman_maze1.env
+
+BEGIN_ROBOT
+
+     TYPE = ghostbot
+     BOT_NAME = Blinky
+     COLOR = red
+     RADIUS = 7
+     ASM_FILE = gr_demos/pacman/ghostbot_maze1.s
+     START_X = 154
+     #START_X = 14
+     START_Y = 14
+
+END_ROBOT

@@ -1,0 +1,13 @@
+* control multiple robots per file
+* remove mem_addr types, etc. from spim code
+* instructions to retrieve mmappedIO addresses
+
+* add to gamefile: ROBOT_SPECIAL{0,1} to pass in props to robots at run
+  time (say if have a pacbot, ROBOT_SPECIAL0 = 100 can be interpreted as
+  the number of pebbles on the map)
+
+Display options:
+* animations, textures, robot / envobject shape
+
+Demos: 
+* capture the flag and pacman

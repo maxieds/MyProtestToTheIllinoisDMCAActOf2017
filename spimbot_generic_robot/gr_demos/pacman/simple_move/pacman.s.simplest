@@ -1,0 +1,160 @@
+# pacman.s : generic robot demo; controls the pacbot;
+# Author: Maxie D. Schmidt (May 2006)
+
+.data
+
+.text
+
+# It would be nicer if it had a couple of instructions to get the 
+# addresses, but that is on the TODO list. These addresses can be predicted
+# based on the ordering of the peripherals and the robot's position
+# in the gamefile.
+#
+# velocity: 0xffff0000
+# orientation value: 0xffff0004
+# orientation ctrl: 0xffff0008
+# bonk ack: 0xffff0020
+# timer ack: 0xffff0024
+# arrow up ack: 0xffff0028
+# arrow down ack: 0xffff002c
+# arrow left ack: 0xffff0030
+# arrow right ack: 0xffff0034
+# grid align ack: 0xffff0038
+
+# // pacman pseudo code (this is about the simplest way to control pacman):
+#
+# while(!(all pebbles eaten) && !(ghostbot contact)) {
+#
+#      if(keypress arrow up) {
+#           abs orientation = 90;
+#           set velocity;
+#      }
+#      [...]
+#      else if(keypress arrow right) {
+#           abs orientation = 0;
+#           set velocity;
+#      }
+#
+# }
+
+main:
+     # interrupts: bonk and all four arrow keys:
+     li $t4, 0x7301
+     mtc0 $t4, $12
+
+     # claiming vars: $t0 = velocity;
+     # initialize vars:
+     li $t0, 5 
+
+     # set initial orientation and velocity:
+     li $t4, 0
+     sw $t4, 0xffff0004($zero)
+     li $t4, 1
+     sw $t4, 0xffff0008($zero)
+     sw $t0, 0xffff0000($zero)
+
+loop:
+     j loop
+
+.ktext 0x80000080
+interrupt_handler:
+     .set noat
+     move $k1, $at
+     .set at
+
+     mfc0 $k0, $13
+     srl $a0, $k0, 2
+     and $a0, $a0, 0xf
+     bne $a0, 0, non_interrupt
+
+interrupt_dispatch:
+
+     mfc0 $k0, $13
+     beq $k0, $zero, done
+
+     and $a0, $k0, 0x1000
+     bne $a0, 0, bonk_interrupt
+     
+     and $a0, $k0, 0x2000
+     bne $a0, 0, arrow_up_interrupt
+
+     and $a0, $k0, 0x4000
+     bne $a0, 0, arrow_down_interrupt
+
+     and $a0, $k0, 0x100
+     bne $a0, 0, arrow_left_interrupt
+
+     and $a0, $k0, 0x200
+     bne $a0, 0, arrow_right_interrupt
+     
+     j done
+
+bonk_interrupt:
+     # nothing to do (wait for arrow key input to change directions).
+     # ack:
+     sw $a1, 0xffff0020($zero)
+     
+     j interrupt_dispatch
+
+arrow_up_interrupt:
+     # ack:
+     sw $a1, 0xffff0028($zero)
+     
+     # move upwards:
+     li $t4, 90
+     sw $t4, 0xffff0004($zero)
+     li $t4, 1 # abs. angle
+     sw $t4, 0xffff0008($zero)
+     sw $t0, 0xffff0000($zero)
+          
+     j interrupt_dispatch
+
+arrow_down_interrupt:
+     # ack:
+     sw $a1, 0xffff002c($zero)
+     
+     # move downwards:
+     li $t4, 270
+     sw $t4, 0xffff0004($zero)
+     li $t4, 1 # abs. angle
+     sw $t4, 0xffff0008($zero)
+     sw $t0, 0xffff0000($zero)
+          
+     j interrupt_dispatch
+     
+arrow_left_interrupt:
+     # ack:
+     sw $a1, 0xffff0030($zero)
+     
+     # move left:
+     li $t4, 180
+     sw $t4, 0xffff0004($zero)
+     li $t4, 1 # abs. angle
+     sw $t4, 0xffff0008($zero)
+     sw $t0, 0xffff0000($zero)
+          
+     j interrupt_dispatch
+
+arrow_right_interrupt:
+     # ack:
+     sw $a1, 0xffff0034($zero)
+     
+     # move right:
+     li $t4, 0
+     sw $t4, 0xffff0004($zero)
+     li $t4, 1 # abs. angle
+     sw $t4, 0xffff0008($zero)
+     sw $t0, 0xffff0000($zero)
+     
+     j interrupt_dispatch
+
+non_interrupt:
+     j done
+
+done:
+     mfc0 $k0, $14
+     .set noat
+     move $at, $k1
+     .set at
+     rfe
+     jr $k0

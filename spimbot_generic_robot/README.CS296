@@ -1,0 +1,70 @@
+Generic Robot README
+Author: Maxie D. Schmidt
+
+All copies and parts of the generic_robot source must contain this README (in addition to the copyright notices from the original spimbot source). The generic_robot code (the *.cpp and corresponding *.h files + tweaks to other files) and the generic robot demos (gr_demos directory) are copyright Maxie D. Schmidt (2006). Generic_robot is derived from the spimbot code, derived from the spim code. Those copyright notices apply as well.
+
+Quickstart:
+   (*) $ ./Configure 
+       $ make -f Makefile.std
+   (*) If there are any errors check that the X11 dirs in Makefile.std are 
+       correct
+   (*) Note that to get keypresses recognized the mouse needs to be over the
+       map window and the map window needs to be focused.
+   (*) To play the demos: The pacman demos use the arrow keys to control 
+       the pacbot. Note that the controls are a little strange: to turn, 
+       the keypress for the turn must be hit the grid cell before the cell to
+       turn on.
+       $ ./genericrobot -gamefile gr_demos/pacman/pacman_maze1-pacman_only.game\                        -maponly -run
+       $ ./genericrobot -gamefile gr_demos/pacman/pacman_maze2-pacman_only.game\
+                        -maponly -run
+
+Introduction:
+Generic_robot is a generalization of spimbot. It takes properties of environment objects (movable, shares space, etc.) and robots (display properties, memory-mapped IO addresses, peripherals, etc.) and sets up a general environment for robots. From the general robot class, other, more specific robots can be created by inheriting from the generic_robot class. Robot components such as peripherals and memory-mapped IO properties can be used as base classes for other peripherals and properties that a derived robot can use. There is also an environment object base class to create more specific environment objects. The environment is specified by a game file passed via a commandline option. Due to this the environment makeup is not hard-coded in the program source and can change by simply specifying a different game file.
+
+
+New Files List:
+
+SPIMbot.h      : spimbot related constants previously declared in robot.c; also 
+                 some of the SPIM types;
+envobject.*    : base class for environment objects and derived class 
+                 definitions;
+externs.h      : bot_admin instance: manages robot lists, environment objects,
+                 and other variables needed to run the program;
+gameparser.*   : parses the environment (grid), environment objects, robots
+                 and related properties specified from the gamefile at 
+                 runtime;
+genericrobot.* : the base class for robots and derived class definitions; this
+                 shows the general properties of a robot; the generic_robot
+                 (base) class replaces the functionality of bot_state_t and
+                 adds some new properties and robot functions;
+mmappedIO.*    : base class for memory mapped IO and definitions for derived
+                 classes; each class has read()/write() functions as well as
+                 a memory mapped IO address; indices for memory mapped IO
+                 within robots;
+peripherals.*  : base class for peripherals and definitions for derived classes;
+                 indices of peripherals within a generic_robot or other robot
+                 type and interrupt masks;
+robotutils.*   : functional replacement for robot.c;
+types.*        : data types;
+utility.*      : utility functions;
+
+Pacman Example (see files in the gr_demos/pacman/ directory):
+The pacman uses two derived robot classes: the ghostbot and the pacbot. The ghost bot has access to the x and y coordinates of the pacbot. Based on the coordinates of the pacbot, the ghostbots try to traverse the maze and make contact with pacbot to end the game before the pacbot has munched all pebbles from the maze. Initially, the plan for the ghostbot (asm) source was to have the shortest paths from any grid point to any grid point pre-computed for the ghostbot. In order to make space for the large amount of data in the file the data size and limit for SPIM were increased [*]. The pacbot's movement is user controlled by the arrow keys. Each arrow key press generates an interrupt for the pacbot. The point of the game is for the pacbot to munch all of the pacman pebbles (derived environment objects) scattered throughout the maze. There are two pacman mazes available in the pacman directory. Currently only pacman or a ghostbot can be run at one time.
+
+[*] Note that due to the large file size of ghostbot_maze*.s I changed the data size and data limit of mem_image_t. This change appears in spim-utils.c at line 141. Under normal usage the increase is probably not necessary, so it should probably be changed back to save some (actual computer) memory.
+
+Other Examples:
+The number of games (or scenarios) that can be launched from a single executable are limited only by the number and types of robots (environment objects, peripherals, etc.) compiled into the program. There are a couple of games that have not been implemented by myself so far, but are interesting examples to code in assembly. For example: battle bots and capture the flag. At the moment there is one assembly file per robot. The coding could be made more interesting by allowing a team of robots to be controlled by a single assembly file (see Future Improvements section below).
+
+Future Improvements: Most of this is on the TODO.txt list.
+   (*) Allow a single assembly file to control multiple robots
+   (*) Robot and env. object animations, textures (more than one color to draw
+       the object), and shapes
+   (*) give environment objects robot-like properties (for example: env. objects
+       could be able to set a timer "interrupt" and periodically run a function        from that; allow the objects to have velocity (say for bullets or arrows
+       in battle bots))
+   (*) dynamic creation of environment objects and robots from within the 
+       assembly source (for example: in battle bots or capture the flag allow
+       creation of moving bullets or arrows to launch at robots from the
+       opposing side)
+   (*) more and better demos

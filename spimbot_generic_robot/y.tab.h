@@ -1,0 +1,550 @@
+/* A Bison parser, made by GNU Bison 1.875d.  */
+
+/* Skeleton parser for Yacc-like parsing with Bison,
+   Copyright (C) 1984, 1989, 1990, 2000, 2001, 2002, 2003, 2004 Free Software Foundation, Inc.
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2, or (at your option)
+   any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 59 Temple Place - Suite 330,
+   Boston, MA 02111-1307, USA.  */
+
+/* As a special exception, when this file is copied by Bison into a
+   Bison output file, you may use that output file without restriction.
+   This special exception was added by the Free Software Foundation
+   in version 1.24 of Bison.  */
+
+/* Tokens.  */
+#ifndef YYTOKENTYPE
+# define YYTOKENTYPE
+   /* Put the tokens into the symbol table, so that GDB and other debuggers
+      know about them.  */
+   enum yytokentype {
+     Y_EOF = 258,
+     Y_NL = 259,
+     Y_INT = 260,
+     Y_ID = 261,
+     Y_REG = 262,
+     Y_FP_REG = 263,
+     Y_STR = 264,
+     Y_FP = 265,
+     Y_ABS_D_OP = 266,
+     Y_ABS_S_OP = 267,
+     Y_ADDIU_OP = 268,
+     Y_ADDI_OP = 269,
+     Y_ADDU_OP = 270,
+     Y_ADD_D_OP = 271,
+     Y_ADD_OP = 272,
+     Y_ADD_S_OP = 273,
+     Y_ANDI_OP = 274,
+     Y_AND_OP = 275,
+     Y_BC0F_OP = 276,
+     Y_BC0T_OP = 277,
+     Y_BC1F_OP = 278,
+     Y_BC1T_OP = 279,
+     Y_BC2F_OP = 280,
+     Y_BC2T_OP = 281,
+     Y_BC3F_OP = 282,
+     Y_BC3T_OP = 283,
+     Y_BEQ_OP = 284,
+     Y_BGEZAL_OP = 285,
+     Y_BGEZ_OP = 286,
+     Y_BGTZ_OP = 287,
+     Y_BLEZ_OP = 288,
+     Y_BLTZAL_OP = 289,
+     Y_BLTZ_OP = 290,
+     Y_BNE_OP = 291,
+     Y_BREAK_OP = 292,
+     Y_CFC0_OP = 293,
+     Y_CFC1_OP = 294,
+     Y_CFC2_OP = 295,
+     Y_CFC3_OP = 296,
+     Y_COP0_OP = 297,
+     Y_COP1_OP = 298,
+     Y_COP2_OP = 299,
+     Y_COP3_OP = 300,
+     Y_CTC0_OP = 301,
+     Y_CTC1_OP = 302,
+     Y_CTC2_OP = 303,
+     Y_CTC3_OP = 304,
+     Y_CVT_D_S_OP = 305,
+     Y_CVT_D_W_OP = 306,
+     Y_CVT_S_D_OP = 307,
+     Y_CVT_S_W_OP = 308,
+     Y_CVT_W_D_OP = 309,
+     Y_CVT_W_S_OP = 310,
+     Y_C_EQ_D_OP = 311,
+     Y_C_EQ_S_OP = 312,
+     Y_C_F_D_OP = 313,
+     Y_C_F_S_OP = 314,
+     Y_C_LE_D_OP = 315,
+     Y_C_LE_S_OP = 316,
+     Y_C_LT_D_OP = 317,
+     Y_C_LT_S_OP = 318,
+     Y_C_NGE_D_OP = 319,
+     Y_C_NGE_S_OP = 320,
+     Y_C_NGLE_D_OP = 321,
+     Y_C_NGLE_S_OP = 322,
+     Y_C_NGL_D_OP = 323,
+     Y_C_NGL_S_OP = 324,
+     Y_C_NGT_D_OP = 325,
+     Y_C_NGT_S_OP = 326,
+     Y_C_OLT_D_OP = 327,
+     Y_C_OLT_S_OP = 328,
+     Y_C_OLE_D_OP = 329,
+     Y_C_OLE_S_OP = 330,
+     Y_C_SEQ_D_OP = 331,
+     Y_C_SEQ_S_OP = 332,
+     Y_C_SF_D_OP = 333,
+     Y_C_SF_S_OP = 334,
+     Y_C_UEQ_D_OP = 335,
+     Y_C_UEQ_S_OP = 336,
+     Y_C_ULT_D_OP = 337,
+     Y_C_ULT_S_OP = 338,
+     Y_C_ULE_D_OP = 339,
+     Y_C_ULE_S_OP = 340,
+     Y_C_UN_D_OP = 341,
+     Y_C_UN_S_OP = 342,
+     Y_DIVU_OP = 343,
+     Y_DIV_D_OP = 344,
+     Y_DIV_OP = 345,
+     Y_DIV_S_OP = 346,
+     Y_JALR_OP = 347,
+     Y_JAL_OP = 348,
+     Y_JR_OP = 349,
+     Y_J_OP = 350,
+     Y_LBU_OP = 351,
+     Y_LB_OP = 352,
+     Y_LHU_OP = 353,
+     Y_LH_OP = 354,
+     Y_LUI_OP = 355,
+     Y_LWC0_OP = 356,
+     Y_LWC1_OP = 357,
+     Y_LWC2_OP = 358,
+     Y_LWC3_OP = 359,
+     Y_LWL_OP = 360,
+     Y_LWR_OP = 361,
+     Y_LW_OP = 362,
+     Y_MFC0_OP = 363,
+     Y_MFC1_OP = 364,
+     Y_MFC2_OP = 365,
+     Y_MFC3_OP = 366,
+     Y_MFHI_OP = 367,
+     Y_MFLO_OP = 368,
+     Y_MOV_D_OP = 369,
+     Y_MOV_S_OP = 370,
+     Y_MTC0_OP = 371,
+     Y_MTC1_OP = 372,
+     Y_MTC2_OP = 373,
+     Y_MTC3_OP = 374,
+     Y_MTHI_OP = 375,
+     Y_MTLO_OP = 376,
+     Y_MULTU_OP = 377,
+     Y_MULT_OP = 378,
+     Y_MUL_D_OP = 379,
+     Y_MUL_S_OP = 380,
+     Y_NEG_D_OP = 381,
+     Y_NEG_S_OP = 382,
+     Y_NOR_OP = 383,
+     Y_ORI_OP = 384,
+     Y_OR_OP = 385,
+     Y_PFW_OP = 386,
+     Y_RFE_OP = 387,
+     Y_SB_OP = 388,
+     Y_SH_OP = 389,
+     Y_SLLV_OP = 390,
+     Y_SLL_OP = 391,
+     Y_SLTIU_OP = 392,
+     Y_SLTI_OP = 393,
+     Y_SLTU_OP = 394,
+     Y_SLT_OP = 395,
+     Y_SRAV_OP = 396,
+     Y_SRA_OP = 397,
+     Y_SRLV_OP = 398,
+     Y_SRL_OP = 399,
+     Y_SUBU_OP = 400,
+     Y_SUB_D_OP = 401,
+     Y_SUB_OP = 402,
+     Y_SUB_S_OP = 403,
+     Y_SWC0_OP = 404,
+     Y_SWC1_OP = 405,
+     Y_SWC2_OP = 406,
+     Y_SWC3_OP = 407,
+     Y_SWL_OP = 408,
+     Y_SWR_OP = 409,
+     Y_SW_OP = 410,
+     Y_SYSCALL_OP = 411,
+     Y_TLBP_OP = 412,
+     Y_TLBR_OP = 413,
+     Y_TLBWI_OP = 414,
+     Y_TLBWR_OP = 415,
+     Y_XORI_OP = 416,
+     Y_XOR_OP = 417,
+     Y_ABS_POP = 418,
+     Y_BAL_POP = 419,
+     Y_BEQZ_POP = 420,
+     Y_BGEU_POP = 421,
+     Y_BGE_POP = 422,
+     Y_BGTU_POP = 423,
+     Y_BGT_POP = 424,
+     Y_BLEU_POP = 425,
+     Y_BLE_POP = 426,
+     Y_BLTU_POP = 427,
+     Y_BLT_POP = 428,
+     Y_BNEZ_POP = 429,
+     Y_B_POP = 430,
+     Y_LA_POP = 431,
+     Y_LD_POP = 432,
+     Y_LI_POP = 433,
+     Y_LI_D_POP = 434,
+     Y_LI_S_POP = 435,
+     Y_L_D_POP = 436,
+     Y_L_S_POP = 437,
+     Y_MFC1_D_POP = 438,
+     Y_MTC1_D_POP = 439,
+     Y_MOVE_POP = 440,
+     Y_MULOU_POP = 441,
+     Y_MULO_POP = 442,
+     Y_MUL_POP = 443,
+     Y_NEGU_POP = 444,
+     Y_NEG_POP = 445,
+     Y_NOP_POP = 446,
+     Y_NOT_POP = 447,
+     Y_REMU_POP = 448,
+     Y_REM_POP = 449,
+     Y_ROL_POP = 450,
+     Y_ROR_POP = 451,
+     Y_SD_POP = 452,
+     Y_SEQ_POP = 453,
+     Y_SGEU_POP = 454,
+     Y_SGE_POP = 455,
+     Y_SGTU_POP = 456,
+     Y_SGT_POP = 457,
+     Y_SLEU_POP = 458,
+     Y_SLE_POP = 459,
+     Y_SNE_POP = 460,
+     Y_S_D_POP = 461,
+     Y_S_S_POP = 462,
+     Y_ULHU_POP = 463,
+     Y_ULH_POP = 464,
+     Y_ULW_POP = 465,
+     Y_USH_POP = 466,
+     Y_USW_POP = 467,
+     Y_ALIAS_DIR = 468,
+     Y_ALIGN_DIR = 469,
+     Y_ASCII_DIR = 470,
+     Y_ASCIIZ_DIR = 471,
+     Y_ASM0_DIR = 472,
+     Y_BGNB_DIR = 473,
+     Y_BYTE_DIR = 474,
+     Y_COMM_DIR = 475,
+     Y_DATA_DIR = 476,
+     Y_DOUBLE_DIR = 477,
+     Y_ENDB_DIR = 478,
+     Y_ENDR_DIR = 479,
+     Y_END_DIR = 480,
+     Y_ENT_DIR = 481,
+     Y_ERR_DIR = 482,
+     Y_EXTERN_DIR = 483,
+     Y_FILE_DIR = 484,
+     Y_FLOAT_DIR = 485,
+     Y_FMASK_DIR = 486,
+     Y_FRAME_DIR = 487,
+     Y_GLOBAL_DIR = 488,
+     Y_HALF_DIR = 489,
+     Y_K_TEXT_DIR = 490,
+     Y_K_DATA_DIR = 491,
+     Y_LABEL_DIR = 492,
+     Y_LCOMM_DIR = 493,
+     Y_LIVEREG_DIR = 494,
+     Y_LOC_DIR = 495,
+     Y_MASK_DIR = 496,
+     Y_NOALIAS_DIR = 497,
+     Y_OPTIONS_DIR = 498,
+     Y_RDATA_DIR = 499,
+     Y_REPEAT_DIR = 500,
+     Y_SDATA_DIR = 501,
+     Y_SET_DIR = 502,
+     Y_SPACE_DIR = 503,
+     Y_STRUCT_DIR = 504,
+     Y_TEXT_DIR = 505,
+     Y_VERSTAMP_DIR = 506,
+     Y_VREG_DIR = 507,
+     Y_WORD_DIR = 508
+   };
+#endif
+#define Y_EOF 258
+#define Y_NL 259
+#define Y_INT 260
+#define Y_ID 261
+#define Y_REG 262
+#define Y_FP_REG 263
+#define Y_STR 264
+#define Y_FP 265
+#define Y_ABS_D_OP 266
+#define Y_ABS_S_OP 267
+#define Y_ADDIU_OP 268
+#define Y_ADDI_OP 269
+#define Y_ADDU_OP 270
+#define Y_ADD_D_OP 271
+#define Y_ADD_OP 272
+#define Y_ADD_S_OP 273
+#define Y_ANDI_OP 274
+#define Y_AND_OP 275
+#define Y_BC0F_OP 276
+#define Y_BC0T_OP 277
+#define Y_BC1F_OP 278
+#define Y_BC1T_OP 279
+#define Y_BC2F_OP 280
+#define Y_BC2T_OP 281
+#define Y_BC3F_OP 282
+#define Y_BC3T_OP 283
+#define Y_BEQ_OP 284
+#define Y_BGEZAL_OP 285
+#define Y_BGEZ_OP 286
+#define Y_BGTZ_OP 287
+#define Y_BLEZ_OP 288
+#define Y_BLTZAL_OP 289
+#define Y_BLTZ_OP 290
+#define Y_BNE_OP 291
+#define Y_BREAK_OP 292
+#define Y_CFC0_OP 293
+#define Y_CFC1_OP 294
+#define Y_CFC2_OP 295
+#define Y_CFC3_OP 296
+#define Y_COP0_OP 297
+#define Y_COP1_OP 298
+#define Y_COP2_OP 299
+#define Y_COP3_OP 300
+#define Y_CTC0_OP 301
+#define Y_CTC1_OP 302
+#define Y_CTC2_OP 303
+#define Y_CTC3_OP 304
+#define Y_CVT_D_S_OP 305
+#define Y_CVT_D_W_OP 306
+#define Y_CVT_S_D_OP 307
+#define Y_CVT_S_W_OP 308
+#define Y_CVT_W_D_OP 309
+#define Y_CVT_W_S_OP 310
+#define Y_C_EQ_D_OP 311
+#define Y_C_EQ_S_OP 312
+#define Y_C_F_D_OP 313
+#define Y_C_F_S_OP 314
+#define Y_C_LE_D_OP 315
+#define Y_C_LE_S_OP 316
+#define Y_C_LT_D_OP 317
+#define Y_C_LT_S_OP 318
+#define Y_C_NGE_D_OP 319
+#define Y_C_NGE_S_OP 320
+#define Y_C_NGLE_D_OP 321
+#define Y_C_NGLE_S_OP 322
+#define Y_C_NGL_D_OP 323
+#define Y_C_NGL_S_OP 324
+#define Y_C_NGT_D_OP 325
+#define Y_C_NGT_S_OP 326
+#define Y_C_OLT_D_OP 327
+#define Y_C_OLT_S_OP 328
+#define Y_C_OLE_D_OP 329
+#define Y_C_OLE_S_OP 330
+#define Y_C_SEQ_D_OP 331
+#define Y_C_SEQ_S_OP 332
+#define Y_C_SF_D_OP 333
+#define Y_C_SF_S_OP 334
+#define Y_C_UEQ_D_OP 335
+#define Y_C_UEQ_S_OP 336
+#define Y_C_ULT_D_OP 337
+#define Y_C_ULT_S_OP 338
+#define Y_C_ULE_D_OP 339
+#define Y_C_ULE_S_OP 340
+#define Y_C_UN_D_OP 341
+#define Y_C_UN_S_OP 342
+#define Y_DIVU_OP 343
+#define Y_DIV_D_OP 344
+#define Y_DIV_OP 345
+#define Y_DIV_S_OP 346
+#define Y_JALR_OP 347
+#define Y_JAL_OP 348
+#define Y_JR_OP 349
+#define Y_J_OP 350
+#define Y_LBU_OP 351
+#define Y_LB_OP 352
+#define Y_LHU_OP 353
+#define Y_LH_OP 354
+#define Y_LUI_OP 355
+#define Y_LWC0_OP 356
+#define Y_LWC1_OP 357
+#define Y_LWC2_OP 358
+#define Y_LWC3_OP 359
+#define Y_LWL_OP 360
+#define Y_LWR_OP 361
+#define Y_LW_OP 362
+#define Y_MFC0_OP 363
+#define Y_MFC1_OP 364
+#define Y_MFC2_OP 365
+#define Y_MFC3_OP 366
+#define Y_MFHI_OP 367
+#define Y_MFLO_OP 368
+#define Y_MOV_D_OP 369
+#define Y_MOV_S_OP 370
+#define Y_MTC0_OP 371
+#define Y_MTC1_OP 372
+#define Y_MTC2_OP 373
+#define Y_MTC3_OP 374
+#define Y_MTHI_OP 375
+#define Y_MTLO_OP 376
+#define Y_MULTU_OP 377
+#define Y_MULT_OP 378
+#define Y_MUL_D_OP 379
+#define Y_MUL_S_OP 380
+#define Y_NEG_D_OP 381
+#define Y_NEG_S_OP 382
+#define Y_NOR_OP 383
+#define Y_ORI_OP 384
+#define Y_OR_OP 385
+#define Y_PFW_OP 386
+#define Y_RFE_OP 387
+#define Y_SB_OP 388
+#define Y_SH_OP 389
+#define Y_SLLV_OP 390
+#define Y_SLL_OP 391
+#define Y_SLTIU_OP 392
+#define Y_SLTI_OP 393
+#define Y_SLTU_OP 394
+#define Y_SLT_OP 395
+#define Y_SRAV_OP 396
+#define Y_SRA_OP 397
+#define Y_SRLV_OP 398
+#define Y_SRL_OP 399
+#define Y_SUBU_OP 400
+#define Y_SUB_D_OP 401
+#define Y_SUB_OP 402
+#define Y_SUB_S_OP 403
+#define Y_SWC0_OP 404
+#define Y_SWC1_OP 405
+#define Y_SWC2_OP 406
+#define Y_SWC3_OP 407
+#define Y_SWL_OP 408
+#define Y_SWR_OP 409
+#define Y_SW_OP 410
+#define Y_SYSCALL_OP 411
+#define Y_TLBP_OP 412
+#define Y_TLBR_OP 413
+#define Y_TLBWI_OP 414
+#define Y_TLBWR_OP 415
+#define Y_XORI_OP 416
+#define Y_XOR_OP 417
+#define Y_ABS_POP 418
+#define Y_BAL_POP 419
+#define Y_BEQZ_POP 420
+#define Y_BGEU_POP 421
+#define Y_BGE_POP 422
+#define Y_BGTU_POP 423
+#define Y_BGT_POP 424
+#define Y_BLEU_POP 425
+#define Y_BLE_POP 426
+#define Y_BLTU_POP 427
+#define Y_BLT_POP 428
+#define Y_BNEZ_POP 429
+#define Y_B_POP 430
+#define Y_LA_POP 431
+#define Y_LD_POP 432
+#define Y_LI_POP 433
+#define Y_LI_D_POP 434
+#define Y_LI_S_POP 435
+#define Y_L_D_POP 436
+#define Y_L_S_POP 437
+#define Y_MFC1_D_POP 438
+#define Y_MTC1_D_POP 439
+#define Y_MOVE_POP 440
+#define Y_MULOU_POP 441
+#define Y_MULO_POP 442
+#define Y_MUL_POP 443
+#define Y_NEGU_POP 444
+#define Y_NEG_POP 445
+#define Y_NOP_POP 446
+#define Y_NOT_POP 447
+#define Y_REMU_POP 448
+#define Y_REM_POP 449
+#define Y_ROL_POP 450
+#define Y_ROR_POP 451
+#define Y_SD_POP 452
+#define Y_SEQ_POP 453
+#define Y_SGEU_POP 454
+#define Y_SGE_POP 455
+#define Y_SGTU_POP 456
+#define Y_SGT_POP 457
+#define Y_SLEU_POP 458
+#define Y_SLE_POP 459
+#define Y_SNE_POP 460
+#define Y_S_D_POP 461
+#define Y_S_S_POP 462
+#define Y_ULHU_POP 463
+#define Y_ULH_POP 464
+#define Y_ULW_POP 465
+#define Y_USH_POP 466
+#define Y_USW_POP 467
+#define Y_ALIAS_DIR 468
+#define Y_ALIGN_DIR 469
+#define Y_ASCII_DIR 470
+#define Y_ASCIIZ_DIR 471
+#define Y_ASM0_DIR 472
+#define Y_BGNB_DIR 473
+#define Y_BYTE_DIR 474
+#define Y_COMM_DIR 475
+#define Y_DATA_DIR 476
+#define Y_DOUBLE_DIR 477
+#define Y_ENDB_DIR 478
+#define Y_ENDR_DIR 479
+#define Y_END_DIR 480
+#define Y_ENT_DIR 481
+#define Y_ERR_DIR 482
+#define Y_EXTERN_DIR 483
+#define Y_FILE_DIR 484
+#define Y_FLOAT_DIR 485
+#define Y_FMASK_DIR 486
+#define Y_FRAME_DIR 487
+#define Y_GLOBAL_DIR 488
+#define Y_HALF_DIR 489
+#define Y_K_TEXT_DIR 490
+#define Y_K_DATA_DIR 491
+#define Y_LABEL_DIR 492
+#define Y_LCOMM_DIR 493
+#define Y_LIVEREG_DIR 494
+#define Y_LOC_DIR 495
+#define Y_MASK_DIR 496
+#define Y_NOALIAS_DIR 497
+#define Y_OPTIONS_DIR 498
+#define Y_RDATA_DIR 499
+#define Y_REPEAT_DIR 500
+#define Y_SDATA_DIR 501
+#define Y_SET_DIR 502
+#define Y_SPACE_DIR 503
+#define Y_STRUCT_DIR 504
+#define Y_TEXT_DIR 505
+#define Y_VERSTAMP_DIR 506
+#define Y_VREG_DIR 507
+#define Y_WORD_DIR 508
+
+
+
+
+#if ! defined (YYSTYPE) && ! defined (YYSTYPE_IS_DECLARED)
+typedef int YYSTYPE;
+# define yystype YYSTYPE /* obsolescent; will be withdrawn */
+# define YYSTYPE_IS_DECLARED 1
+# define YYSTYPE_IS_TRIVIAL 1
+#endif
+
+extern YYSTYPE yylval;
+
+
+

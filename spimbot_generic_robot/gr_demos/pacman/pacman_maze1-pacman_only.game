@@ -1,0 +1,15 @@
+// pacman only
+
+ENV_FILE = gr_demos/pacman/pacman_maze1.env
+
+BEGIN_ROBOT
+
+     TYPE = pacbot 
+     BOT_NAME = Pacman
+     COLOR = yellow
+     RADIUS = 7 
+     ASM_FILE = gr_demos/pacman/pacman.s
+     START_X = 14
+     START_Y = 14
+
+END_ROBOT
