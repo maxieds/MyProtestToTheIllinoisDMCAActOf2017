@@ -31,3 +31,7 @@ with the microphone on to indicate that talking (or whispering) in class was not
 It was in fact distinctively clearly voiced on the course website and newsgroups that complete handwritten 
 lecture notes each MWF-day could be downloaded off of the course website to make up for this 
 anticipated rudeness when it came up. 
+
+Some former all-star students and TAs still quote him like a king around the web. I have another suggestion:
+
+“*You* **will** *experience testosterone in this department. Just (like) give it back to them!*” — Cinda Heeren, WIE summer pre-camp (circa 2004)
