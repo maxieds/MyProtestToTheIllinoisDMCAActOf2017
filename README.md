@@ -1,4 +1,4 @@
-# My protest and official reaction to the CS@UIUC DMCA Takedown Act of 2017
+# My protest and official reaction to the CS@UIUC DMCA Takedown Act of 2015
 
 *Does anyone actually remember 2005?*
 **(e.g., when uiuc.edu was not redirected to illinois.edu)**
