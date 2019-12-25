@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<permissions>
+    <package name="com.motricity.verizon.ssodownloadable">
+
+        <!-- android.permission.group.PHONE -->
+        <permission name="android.permission.READ_PHONE_STATE"/>
+
+        <!-- android.permission.group.SMS -->
+        <permission name="android.permission.RECEIVE_SMS"/>
+
+    </package>
+</permissions>

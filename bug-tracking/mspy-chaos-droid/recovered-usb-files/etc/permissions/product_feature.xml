@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<permissions>
+    <feature name="com.motorola.software.device.kinzie" />
+    <feature name="com.motorola.software.product.kinzie_verizon" />
+    <feature name="com.motorola.hardware.tier.X" />
+    <feature name="com.motorola.hardware.wave.2015.1" />
+</permissions>

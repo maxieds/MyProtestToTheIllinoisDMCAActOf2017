@@ -1,0 +1,6 @@
+<permissions>
+
+    <library name="com.verizon.sdm"
+             file="/system/framework/com.verizon.sdm.jar" />
+
+</permissions>

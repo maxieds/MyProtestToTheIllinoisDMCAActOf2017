@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="GBK"?>
+<deam version="1.0" xmlns="http://www.motorola.com/bug2go">
+    <tag type="dropbox" name="HEALTHD_RESTART" >
+        <scenario name="healthd restart collection">
+            <actions>
+                <attach>
+                    <entry/>
+                    <!-- Get healthd signals from trace file. -->
+                    <exec program="/system/bin/sh">
+                        <args>
+                            <arg>-c</arg>
+                            <arg>cat /sys/kernel/debug/tracing/trace > $B2G_REPORT_DIR/trace_healthd.txt</arg>
+                        </args>
+                    </exec>
+                    <!-- Get dmesg logs in case aplogd isn't running or the files aren't accessible. -->
+                    <exec program="/system/bin/sh">
+                        <args>
+                            <arg>-c</arg>
+                            <arg>
+                                /system/bin/dmesg > $B2G_REPORT_DIR/dmesg.txt
+                            </arg>
+                        </args>
+                    </exec>
+                    <exec program="/system/bin/bugreport">
+                        <output>bugreport.txt</output>
+                        <timeout>300</timeout> <!-- 5 minutes max -->
+                    </exec>
+                    <!-- Get kernel logs from aplogd if available. -->
+                    <exec program="/system/bin/aplogcat">
+                        <output>aplogcat.txt</output>
+                        <args>
+                            <arg>--dump</arg>
+                            <arg>--buffer</arg>
+                            <arg>kernel</arg>
+                            <arg>--output</arg>
+                            <arg>./aplogcat-</arg>
+                            <arg>--temp</arg>
+                            <arg>./</arg>
+                            <arg>--bytes</arg>
+                            <arg>10M</arg>
+                        </args>
+                    </exec>
+                </attach>
+            </actions>
+        </scenario>
+    </tag>
+    <tag type="dropbox" name="Fuel-Gauge_Report" >
+        <scenario name="Fuel Gauge Report">
+            <actions>
+                <attach>
+                    <entry/>
+                    <!-- Get system logs from logcat, in case aplogd isn't running or the files aren't accessible. -->
+                    <exec program="/system/bin/sh">
+                        <args>
+                            <arg>-c</arg>
+                            <arg>
+                                /system/bin/dmesg > $B2G_REPORT_DIR/dmesg.txt
+                            </arg>
+                        </args>
+                    </exec>
+                    <exec program="/system/bin/bugreport">
+                        <output>bugreport.txt</output>
+                        <timeout>300</timeout> <!-- 5 minutes max -->
+                    </exec>
+                    <!-- Get kernel logs from aplogd if available. -->
+                    <exec program="/system/bin/aplogcat">
+                        <output>aplogcat.txt</output>
+                        <args>
+                            <arg>--dump</arg>
+                            <arg>--buffer</arg>
+                            <arg>kernel</arg>
+                            <arg>--output</arg>
+                            <arg>./aplogcat-</arg>
+                            <arg>--temp</arg>
+                            <arg>./</arg>
+                            <arg>--bytes</arg>
+                            <arg>2M</arg>
+                        </args>
+                    </exec>
+                    <!-- Get power_supply log. -->
+                    <exec program="/system/bin/sh">
+                        <args>
+                            <arg>-c</arg>
+                            <arg>
+                                path=/data/power_supply_logger
+                                for file in $(ls $path); do
+                                    cp $path/$file $B2G_REPORT_DIR
+                                done
+                            </arg>
+                        </args>
+                    </exec>
+                </attach>
+            </actions>
+        </scenario>
+    </tag>
+</deam>

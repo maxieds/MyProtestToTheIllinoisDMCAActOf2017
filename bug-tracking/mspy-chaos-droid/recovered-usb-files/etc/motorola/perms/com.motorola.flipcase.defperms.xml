@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- This file ensures this package gets permissions at install time i.e.,
+    default status is "Granted"  -->
+
+<permissions>
+    <package name="com.motorola.flipcase">
+        <permission name="android.permission.READ_CONTACTS" />
+    </package>
+</permissions>

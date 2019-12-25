@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<permissions>
+    <package name="com.motorola.wappushsi">
+        <permission name="android.permission.READ_SMS"/>
+        <permission name="android.permission.RECEIVE_SMS"/>
+        <permission name="android.permission.RECEIVE_WAP_PUSH"/>
+    </package>
+</permissions>

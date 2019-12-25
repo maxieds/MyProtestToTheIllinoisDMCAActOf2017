@@ -1,0 +1,13 @@
+# Migrate data to the new package from the old one
+
+com.motorola.visualvoicemail:com.motorola.vzw.vvm
+    databases
+
+com.motorola.visualvoicemail:com.motorola.vzw.vvm
+    shared_prefs
+
+com.motorola.visualvoicemail:com.motorola.vzw.vvm
+    app_mails
+
+com.motorola.visualvoicemail:com.motorola.vzw.vvm
+    app_webview

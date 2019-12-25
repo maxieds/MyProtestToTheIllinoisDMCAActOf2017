@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone='yes' ?>
+    <updates>
+        <package old="com.motorola.vzw.vvm">
+            <shortcut
+                newpackage="com.motorola.visualvoicemail"
+                oldclass="com.motorola.vzw.vvm.ui.VvmMainActivity"
+                newclass="com.motorola.visualvoicemail.ui.VvmMainActivity" />
+        </package>
+    </updates>
+

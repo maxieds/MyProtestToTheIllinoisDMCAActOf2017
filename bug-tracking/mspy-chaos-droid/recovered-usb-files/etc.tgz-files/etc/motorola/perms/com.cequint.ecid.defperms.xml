@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<permissions>
+    <package name="com.cequint.ecid">
+        <!-- android.permission.group.PHONE -->
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.READ_CALL_LOG"/>
+        <permission name="android.permission.PROCESS_OUTGOING_CALLS"/>
+        <permission name="android.permission.CALL_PHONE"/>
+
+        <!-- android.permission.group.SMS -->
+        <permission name="android.permission.RECEIVE_SMS"/>
+        <permission name="android.permission.SEND_SMS"/>
+
+        <!-- android.permission.group.CONTACTS -->
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.WRITE_CONTACTS"/>
+
+    </package>
+</permissions>
