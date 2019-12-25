@@ -1,0 +1,1 @@
+Copyleft author's device.
