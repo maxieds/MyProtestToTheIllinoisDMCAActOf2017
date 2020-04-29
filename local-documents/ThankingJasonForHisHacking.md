@@ -14,6 +14,11 @@ Same thing with the CS notes by Jason Zych.*
 
 <img src="https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2017/blob/master/local-images/WhoIs.png" />
 
+We also seem to have mined out old CS archives from 2007 suggesting why his LinkedIn profile CV is embarassingly devoid of the typical et cetera professionals adorn their "resumes" with. I also on principle do not approve of his notably lacking contributions to the open source software world, and hence urge those grateful to this educationally inspired archive, to once again [thank Jason (repeatedly)](https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2017/blob/master/local-documents/PredatingTheDMCAAtUIUC.md#credit-where-credit-is-due) for his recent copyleft contributions found here.
+
+<img src="https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2017/blob/master/local-images/DegreeRequirements.png" />
+
+**(Observations: )**
 Some people who are good with data mining can still find old images of him on 
 Google images, including one of him as a lucky X-Windows loving teenager and 
 the [lost faculty image of him](https://cs.illinois.edu/directory/profile/zych) which 
@@ -23,6 +28,7 @@ images worth literally 1000's of words of note taking:
 <img src="https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2017/blob/master/local-images/kdtree-notes-page1.png" />
 
 **(On the role of Math in CS: )**
+
 <img src="https://github.com/maxieds/MyProtestToTheIllinoisDMCAActOf2017/blob/master/local-images/lecture-notes2.png" />
 
 ## My 10 cents
