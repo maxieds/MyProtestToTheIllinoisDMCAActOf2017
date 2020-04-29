@@ -12,6 +12,8 @@ suggest the following answers to the question:
 Homer was an actual person, or if the epic was created by a group of people over many years. 
 Same thing with the CS notes by Jason Zych.*
 
+<img src="https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2017/blob/master/local-images/WhoIs.png" />
+
 Some people who are good with data mining can still find old images of him on 
 Google images, including one of him as a lucky X-Windows loving teenager and 
 the [lost faculty image of him](https://cs.illinois.edu/directory/profile/zych) which 
