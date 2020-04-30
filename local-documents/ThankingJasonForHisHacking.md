@@ -42,7 +42,7 @@ class when the lecturer on board would scream "*Lecture has started! [STFU, boys
 with the microphone on to indicate that talking (or whispering) in class was not to be tolerated. 
 It was in fact distinctively clearly voiced on the course website and newsgroups that complete handwritten 
 lecture notes each MWF-day could be downloaded off of the course website to make up for this 
-anticipated rudeness when it came up. It happens that the famed astronomical ratings Zych is remembered fondly for sometimes by heartthrob administrators in the academic office are a clear indication of the scores from the A-students that go to class the last day to bubble in the course evaluation scantrons (n.b.).
+anticipated rudeness when it came up. It happens that the famed astronomical ratings Zych is remembered fondly for sometimes by heartthrob administrators in the academic office are a clear indication of the scores from the A-students that go to class the last day to bubble in the course evaluation scantrons (n.b.). :trollface: <img src="https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2017/blob/master/local-images/QueenHeerenForPresident.png" width=10 />
 
 Some former all-star students and TAs still quote him like a king around the web. I have another suggestion:
 
