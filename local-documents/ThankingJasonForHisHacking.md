@@ -35,7 +35,7 @@ images worth literally 1000's of words of note taking:
 
 ## My 10 cents
 
-He was also the only instructor I was in class with in my tenure at UIUC who never 
+The heir apparent, King Lecture Hall, was also the only instructor I was in class with in my tenure at UIUC who never 
 introduced himself to the students in his class on day one, and still insisted on 
 being called on by the ubiquitous first-name-only basis. I personally miss the days in that 
 class when the lecturer on board would scream "*Lecture has started! [STFU, boys]*" in class 
