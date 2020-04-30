@@ -14,7 +14,9 @@ Same thing with the CS notes by Jason Zych.*
 
 <img src="https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2017/blob/master/local-images/WhoIs.png" />
 
-We also seem to have mined out old CS archives from 2007 suggesting why his LinkedIn profile CV is embarassingly devoid of the typical et cetera professionals adorn their "resumes" with. I also on principle do not approve of his notably lacking contributions to the open source software world, and hence urge those grateful to this educationally inspired archive, to once again [thank Jason (repeatedly)](https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2017/blob/master/local-documents/PredatingTheDMCAAtUIUC.md#credit-where-credit-is-due) for his recent copyleft contributions found here.
+**(My genius level photgraphic memory)**
+We also seem to have mined out old CS archives from 2007 suggesting why his [LinkedIn profile CV](https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2017/blob/master/local-images/LinkedInSnapshot.png) is embarassingly devoid of the typical et cetera professionals adorn their "resumes" with. I also on principle do not approve of his notably lacking contributions to the open source software world, and hence urge those grateful to this educationally inspired archive, to once again [thank Jason (repeatedly)](https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2017/blob/master/local-documents/PredatingTheDMCAAtUIUC.md#credit-where-credit-is-due) for his recent copyleft contributions found here. 
+I will take the high road and not say that mine at CS@Illinois is bigger than his (an irrelevant point). Sadly, Mr. Zych left the university in 2005 and his code would have otherwise been lost to time.
 
 <img src="https://github.com/maxieds/MyProtestToTheIllinoisDMCATakedownActOf2017/blob/master/local-images/DegreeRequirements.png" />
 
